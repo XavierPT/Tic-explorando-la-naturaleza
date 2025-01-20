@@ -703,7 +703,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.P2Code.GDIncorrecto4Objects3 */
 /* Reuse gdjs.P2Code.GDIncorrecto5Objects3 */
 /* Reuse gdjs.P2Code.GDIncorrecto6Objects3 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\p2\\Flores.mp3", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\p3\\flores.mp3", false, 100, 1);
 }{for(var i = 0, len = gdjs.P2Code.GDCorrecto4Objects3.length ;i < len;++i) {
     gdjs.P2Code.GDCorrecto4Objects3[i].returnVariable(gdjs.P2Code.GDCorrecto4Objects3[i].getVariables().get("SonidoReproducido")).setBoolean(true);
 }

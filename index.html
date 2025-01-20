@@ -188,15 +188,20 @@
 
 
 </head>
-
 <button id="fullscreenButton" style="position: fixed; top: 10px; right: 10px; z-index: 9999;">Pantalla Completa</button>
 <script>
 document.getElementById("fullscreenButton").addEventListener("click", () => {
     const canvas = document.querySelector("canvas");
-    if (canvas && canvas.requestFullscreen) {
-        canvas.requestFullscreen().catch(err => {
-            console.error("No se pudo activar el modo pantalla completa:", err);
-        });
+    if (canvas) {
+        if (canvas.requestFullscreen) {
+            canvas.requestFullscreen().catch(err => {
+                console.error("No se pudo activar el modo pantalla completa:", err);
+            });
+        } else if (canvas.webkitRequestFullscreen) { // Safari
+            canvas.webkitRequestFullscreen();
+        } else {
+            console.error("La API de pantalla completa no es compatible con este navegador.");
+        }
     }
 });
 </script>
@@ -211,6 +216,7 @@ document.getElementById("fullscreenButton").addEventListener("click", () => {
             event.preventDefault(); // Prevenir que el navegador use la tecla Tab
         }
     });
+
 
     (function() {
         //Initialization

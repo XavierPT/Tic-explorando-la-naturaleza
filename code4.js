@@ -1518,7 +1518,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.A2Code.GDIncorrecto1Objects3 */
 /* Reuse gdjs.A2Code.GDIncorrecto2Objects3 */
 /* Reuse gdjs.A2Code.GDIncorrecto3Objects3 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A2\\Iguana.mp3", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A5\\iguana.mp3", false, 100, 1);
 }{for(var i = 0, len = gdjs.A2Code.GDCorrecto1Objects3.length ;i < len;++i) {
     gdjs.A2Code.GDCorrecto1Objects3[i].returnVariable(gdjs.A2Code.GDCorrecto1Objects3[i].getVariables().get("SonidoReproducido")).setBoolean(true);
 }
