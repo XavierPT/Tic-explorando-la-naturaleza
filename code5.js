@@ -1144,7 +1144,7 @@ gdjs.A4Code.GDTitulo_9595del_9595juegoObjects2.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.A4Code.GDInstruccionObjects2 */
 /* Reuse gdjs.A4Code.GDTitulo_9595del_9595juegoObjects2 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A3\\Instruccion2.mp3", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A3\\Instruccion2.1.mp3", false, 100, 1);
 }{for(var i = 0, len = gdjs.A4Code.GDInstruccionObjects2.length ;i < len;++i) {
     gdjs.A4Code.GDInstruccionObjects2[i].returnVariable(gdjs.A4Code.GDInstruccionObjects2[i].getVariables().get("SonidoReproducido")).setBoolean(true);
 }

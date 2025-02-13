@@ -55,7 +55,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3)
 
 };gdjs.FinalCode.asyncCallback25051348 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.FinalCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "A1", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(5);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(25);
@@ -146,7 +146,7 @@ gdjs.FinalCode.GDWhiteDecoratedButton2Objects3.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.FinalCode.GDWhiteDecoratedButtonObjects3 */
 /* Reuse gdjs.FinalCode.GDWhiteDecoratedButton2Objects3 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\FIN\\Jugar de nuevo_01.mp3", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\Menu\\regresar.mp3", false, 100, 1);
 }{for(var i = 0, len = gdjs.FinalCode.GDWhiteDecoratedButtonObjects3.length ;i < len;++i) {
     gdjs.FinalCode.GDWhiteDecoratedButtonObjects3[i].returnVariable(gdjs.FinalCode.GDWhiteDecoratedButtonObjects3[i].getVariables().get("SonidoReproducido")).setBoolean(true);
 }
@@ -370,7 +370,7 @@ for (var i = 0, k = 0, l = gdjs.FinalCode.GDWhiteDecoratedButtonObjects1.length;
 }
 gdjs.FinalCode.GDWhiteDecoratedButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "AVideo", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }
 { //Subevents
 gdjs.FinalCode.eventsList0(runtimeScene);} //End of subevents
@@ -405,6 +405,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Instruccion"), gdjs.FinalCode.GDInstruccionObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Instruccion2"), gdjs.FinalCode.GDInstruccion2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteDecoratedButton"), gdjs.FinalCode.GDWhiteDecoratedButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteDecoratedButton2"), gdjs.FinalCode.GDWhiteDecoratedButton2Objects1);
 {runtimeScene.getScene().getVariables().getFromIndex(0).add(1);
@@ -416,6 +417,9 @@ for(var i = 0, len = gdjs.FinalCode.GDWhiteDecoratedButton2Objects1.length ;i < 
 }
 }{for(var i = 0, len = gdjs.FinalCode.GDInstruccionObjects1.length ;i < len;++i) {
     gdjs.FinalCode.GDInstruccionObjects1[i].returnVariable(gdjs.FinalCode.GDInstruccionObjects1[i].getVariables().getFromIndex(1)).setBoolean(false);
+}
+}{for(var i = 0, len = gdjs.FinalCode.GDInstruccion2Objects1.length ;i < len;++i) {
+    gdjs.FinalCode.GDInstruccion2Objects1[i].returnVariable(gdjs.FinalCode.GDInstruccion2Objects1[i].getVariables().getFromIndex(1)).setBoolean(false);
 }
 }}
 
@@ -435,6 +439,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Instruccion"), gdjs.FinalCode.GDInstruccionObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Instruccion2"), gdjs.FinalCode.GDInstruccion2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteDecoratedButton"), gdjs.FinalCode.GDWhiteDecoratedButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WhiteDecoratedButton2"), gdjs.FinalCode.GDWhiteDecoratedButton2Objects1);
 {runtimeScene.getScene().getVariables().getFromIndex(0).sub(1);
@@ -446,6 +451,9 @@ for(var i = 0, len = gdjs.FinalCode.GDWhiteDecoratedButton2Objects1.length ;i < 
 }
 }{for(var i = 0, len = gdjs.FinalCode.GDInstruccionObjects1.length ;i < len;++i) {
     gdjs.FinalCode.GDInstruccionObjects1[i].returnVariable(gdjs.FinalCode.GDInstruccionObjects1[i].getVariables().getFromIndex(1)).setBoolean(false);
+}
+}{for(var i = 0, len = gdjs.FinalCode.GDInstruccion2Objects1.length ;i < len;++i) {
+    gdjs.FinalCode.GDInstruccion2Objects1[i].returnVariable(gdjs.FinalCode.GDInstruccion2Objects1[i].getVariables().getFromIndex(1)).setBoolean(false);
 }
 }}
 
