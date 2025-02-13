@@ -95,7 +95,7 @@ gdjs.P1Code.GDIncorrecto4Objects4= [];
 
 
 gdjs.P1Code.mapOfGDgdjs_9546P1Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.P1Code.GDIncorrecto3Objects1});
-gdjs.P1Code.asyncCallback23492996 = function (runtimeScene, asyncObjectsList) {
+gdjs.P1Code.asyncCallback23499972 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.P1Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaP", false);
 }gdjs.P1Code.localVariables.length = 0;
@@ -109,7 +109,7 @@ gdjs.P1Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.P1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P1Code.asyncCallback23492996(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P1Code.asyncCallback23499972(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -2652,7 +2652,8 @@ for (var i = 0, k = 0, l = gdjs.P1Code.GDBotonObjects1.length;i<l;++i) {
 gdjs.P1Code.GDBotonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) == 17;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() == 17);
+}
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "P2", true);
@@ -2778,7 +2779,8 @@ gdjs.copyArray(runtimeScene.getObjects("Tiempo2"), gdjs.P1Code.GDTiempo2Objects1
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) < 0;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() < 0);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(59);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) - 1);
@@ -2792,7 +2794,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) < 10;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() < 10);
+}
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Tiempo2"), gdjs.P1Code.GDTiempo2Objects1);
 {for(var i = 0, len = gdjs.P1Code.GDTiempo2Objects1.length ;i < len;++i) {
@@ -2810,10 +2813,12 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {let isConditionTrue_1 = false;
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) == 0;
+{isConditionTrue_1 = (runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber() == 0);
+}
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 0;
+{isConditionTrue_1 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() == 0);
+}
 }
 isConditionTrue_0 = isConditionTrue_1;
 }
@@ -2845,7 +2850,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Tab");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) < runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber();
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() < runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber());
+}
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Boton"), gdjs.P1Code.GDBotonObjects1);
@@ -2930,7 +2936,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "LShift");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) > 1;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() > 1);
+}
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Boton"), gdjs.P1Code.GDBotonObjects1);
@@ -3012,13 +3019,15 @@ for(var i = 0, len = gdjs.P1Code.GDIncorrecto3Objects1.length ;i < len;++i) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 11;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 11);
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Return");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) == 17;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() == 17);
+}
 }
 }
 if (isConditionTrue_0) {
@@ -3034,7 +3043,8 @@ gdjs.copyArray(runtimeScene.getObjects("Boton"), gdjs.P1Code.GDBotonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 11;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() == 11);
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.P1Code.GDBotonObjects1.length;i<l;++i) {
@@ -3065,7 +3075,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) != 11;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() != 11);
+}
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Boton"), gdjs.P1Code.GDBotonObjects1);
 {for(var i = 0, len = gdjs.P1Code.GDBotonObjects1.length ;i < len;++i) {
@@ -3081,7 +3092,8 @@ gdjs.copyArray(runtimeScene.getObjects("Boton"), gdjs.P1Code.GDBotonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(5), true, false);
+{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(5).getAsBoolean();
+}
 if (isConditionTrue_0) {
 
 { //Subevents
@@ -3651,25 +3663,25 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.P1Code.GDIncorrecto5Objects1 */
 /* Reuse gdjs.P1Code.GDIncorrecto6Objects1 */
 {for(var i = 0, len = gdjs.P1Code.GDCorrecto4Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDCorrecto4Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDCorrecto4Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 for(var i = 0, len = gdjs.P1Code.GDCorrecto6Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDCorrecto6Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDCorrecto6Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 for(var i = 0, len = gdjs.P1Code.GDCorrecto5Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDCorrecto5Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDCorrecto5Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 for(var i = 0, len = gdjs.P1Code.GDCorrecto7Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDCorrecto7Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDCorrecto7Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 for(var i = 0, len = gdjs.P1Code.GDIncorrecto5Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDIncorrecto5Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDIncorrecto5Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 for(var i = 0, len = gdjs.P1Code.GDIncorrecto6Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDIncorrecto6Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDIncorrecto6Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 for(var i = 0, len = gdjs.P1Code.GDIncorrecto4Objects1.length ;i < len;++i) {
-    gdjs.P1Code.GDIncorrecto4Objects1[i].getBehavior("Resizable").setSize(310, 103.33333333333334);
+    gdjs.P1Code.GDIncorrecto4Objects1[i].getBehavior("Resizable").setSize(325, 112);
 }
 }}
 

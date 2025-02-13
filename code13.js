@@ -66,7 +66,7 @@ gdjs.P5Code.GDBoton3Objects3= [];
 gdjs.P5Code.GDBoton3Objects4= [];
 
 
-gdjs.P5Code.asyncCallback23909028 = function (runtimeScene, asyncObjectsList) {
+gdjs.P5Code.asyncCallback23916004 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.P5Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaP", false);
 }gdjs.P5Code.localVariables.length = 0;
@@ -80,14 +80,14 @@ gdjs.P5Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.P5Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P5Code.asyncCallback23909028(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P5Code.asyncCallback23916004(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.P5Code.asyncCallback23921740 = function (runtimeScene, asyncObjectsList) {
+};gdjs.P5Code.asyncCallback23928716 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.P5Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "P6", false);
 }gdjs.P5Code.localVariables.length = 0;
@@ -101,7 +101,7 @@ gdjs.P5Code.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.P5Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P5Code.asyncCallback23921740(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P5Code.asyncCallback23928716(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -632,7 +632,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.P5Code.asyncCallback23934972 = function (runtimeScene, asyncObjectsList) {
+};gdjs.P5Code.asyncCallback23941948 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.P5Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "P6", false);
 }gdjs.P5Code.localVariables.length = 0;
@@ -646,7 +646,7 @@ gdjs.P5Code.eventsList6 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.P5Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P5Code.asyncCallback23934972(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P5Code.asyncCallback23941948(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -746,7 +746,8 @@ gdjs.copyArray(runtimeScene.getObjects("Tiempo2"), gdjs.P5Code.GDTiempo2Objects1
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) < 0;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() < 0);
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(59);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) - 1);
@@ -760,7 +761,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) < 10;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() < 10);
+}
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Tiempo2"), gdjs.P5Code.GDTiempo2Objects1);
 {for(var i = 0, len = gdjs.P5Code.GDTiempo2Objects1.length ;i < len;++i) {
@@ -778,10 +780,12 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {let isConditionTrue_1 = false;
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)) == 0;
+{isConditionTrue_1 = (runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber() == 0);
+}
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 0;
+{isConditionTrue_1 = (runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber() == 0);
+}
 }
 isConditionTrue_0 = isConditionTrue_1;
 }
@@ -813,7 +817,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Tab");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) < runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber();
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() < runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber());
+}
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Boton2"), gdjs.P5Code.GDBoton2Objects1);
@@ -854,7 +859,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "LShift");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) > 1;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber() > 1);
+}
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Boton2"), gdjs.P5Code.GDBoton2Objects1);
@@ -924,7 +930,8 @@ gdjs.P5Code.eventsList2(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(5), true, false);
+{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(5).getAsBoolean();
+}
 if (isConditionTrue_0) {
 
 { //Subevents
