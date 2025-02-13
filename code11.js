@@ -95,7 +95,7 @@ gdjs.P2Code.GDIncorrecto4Objects4= [];
 
 
 gdjs.P2Code.mapOfGDgdjs_9546P2Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.P2Code.GDIncorrecto3Objects1});
-gdjs.P2Code.asyncCallback23638948 = function (runtimeScene, asyncObjectsList) {
+gdjs.P2Code.asyncCallback23917540 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.P2Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaP", false);
 }gdjs.P2Code.localVariables.length = 0;
@@ -109,7 +109,7 @@ gdjs.P2Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.P2Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P2Code.asyncCallback23638948(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P2Code.asyncCallback23917540(runtimeScene, asyncObjectsList)));
 }
 }
 

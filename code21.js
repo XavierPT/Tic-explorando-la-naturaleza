@@ -95,7 +95,7 @@ gdjs.S3Code.GDIncorrecto4Objects4= [];
 
 
 gdjs.S3Code.mapOfGDgdjs_9546S3Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.S3Code.GDIncorrecto3Objects1});
-gdjs.S3Code.asyncCallback24566724 = function (runtimeScene, asyncObjectsList) {
+gdjs.S3Code.asyncCallback24864076 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.S3Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaS", false);
 }gdjs.S3Code.localVariables.length = 0;
@@ -109,7 +109,7 @@ gdjs.S3Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.S3Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.S3Code.asyncCallback24566724(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.S3Code.asyncCallback24864076(runtimeScene, asyncObjectsList)));
 }
 }
 

@@ -34,7 +34,7 @@ gdjs.AVideoCode.GDWhiteDecoratedButton4Objects3= [];
 gdjs.AVideoCode.GDWhiteDecoratedButton4Objects4= [];
 
 
-gdjs.AVideoCode.asyncCallback19086228 = function (runtimeScene, asyncObjectsList) {
+gdjs.AVideoCode.asyncCallback23051420 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.AVideoCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "A1", false);
 }gdjs.AVideoCode.localVariables.length = 0;
@@ -48,7 +48,7 @@ gdjs.AVideoCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.AVideoCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.AVideoCode.asyncCallback19086228(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.AVideoCode.asyncCallback23051420(runtimeScene, asyncObjectsList)));
 }
 }
 

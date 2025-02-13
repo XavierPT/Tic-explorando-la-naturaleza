@@ -84,7 +84,7 @@ gdjs.A4Code.mapOfGDgdjs_9546A4Code_9546GDIncorrecto3Objects1Objects = Hashtable.
 gdjs.A4Code.mapOfGDgdjs_9546A4Code_9546GDIncorrecto1Objects1Objects = Hashtable.newFrom({"Incorrecto1": gdjs.A4Code.GDIncorrecto1Objects1});
 gdjs.A4Code.mapOfGDgdjs_9546A4Code_9546GDIncorrecto2Objects1Objects = Hashtable.newFrom({"Incorrecto2": gdjs.A4Code.GDIncorrecto2Objects1});
 gdjs.A4Code.mapOfGDgdjs_9546A4Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.A4Code.GDIncorrecto3Objects1});
-gdjs.A4Code.asyncCallback23095452 = function (runtimeScene, asyncObjectsList) {
+gdjs.A4Code.asyncCallback23356076 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.A4Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaA", false);
 }gdjs.A4Code.localVariables.length = 0;
@@ -98,7 +98,7 @@ gdjs.A4Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.A4Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A4Code.asyncCallback23095452(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A4Code.asyncCallback23356076(runtimeScene, asyncObjectsList)));
 }
 }
 

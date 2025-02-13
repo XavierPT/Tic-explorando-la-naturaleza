@@ -82,7 +82,7 @@ gdjs.A6Code.mapOfGDgdjs_9546A6Code_9546GDIncorrecto2Objects1Objects = Hashtable.
 gdjs.A6Code.mapOfGDgdjs_9546A6Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.A6Code.GDIncorrecto3Objects1});
 gdjs.A6Code.mapOfGDgdjs_9546A6Code_9546GDIncorrecto1Objects1Objects = Hashtable.newFrom({"Incorrecto1": gdjs.A6Code.GDIncorrecto1Objects1});
 gdjs.A6Code.mapOfGDgdjs_9546A6Code_9546GDIncorrecto2Objects1Objects = Hashtable.newFrom({"Incorrecto2": gdjs.A6Code.GDIncorrecto2Objects1});
-gdjs.A6Code.asyncCallback23324956 = function (runtimeScene, asyncObjectsList) {
+gdjs.A6Code.asyncCallback23585580 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.A6Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaA", false);
 }gdjs.A6Code.localVariables.length = 0;
@@ -96,7 +96,7 @@ gdjs.A6Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.A6Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A6Code.asyncCallback23324956(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A6Code.asyncCallback23585580(runtimeScene, asyncObjectsList)));
 }
 }
 

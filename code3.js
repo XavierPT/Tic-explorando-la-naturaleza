@@ -84,7 +84,7 @@ gdjs.A1Code.mapOfGDgdjs_9546A1Code_9546GDIncorrecto3Objects1Objects = Hashtable.
 gdjs.A1Code.mapOfGDgdjs_9546A1Code_9546GDIncorrecto1Objects1Objects = Hashtable.newFrom({"Incorrecto1": gdjs.A1Code.GDIncorrecto1Objects1});
 gdjs.A1Code.mapOfGDgdjs_9546A1Code_9546GDIncorrecto2Objects1Objects = Hashtable.newFrom({"Incorrecto2": gdjs.A1Code.GDIncorrecto2Objects1});
 gdjs.A1Code.mapOfGDgdjs_9546A1Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.A1Code.GDIncorrecto3Objects1});
-gdjs.A1Code.asyncCallback22854740 = function (runtimeScene, asyncObjectsList) {
+gdjs.A1Code.asyncCallback23115348 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.A1Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaA", false);
 }gdjs.A1Code.localVariables.length = 0;
@@ -98,7 +98,7 @@ gdjs.A1Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.A1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A1Code.asyncCallback22854740(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A1Code.asyncCallback23115348(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1518,7 +1518,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.A1Code.GDIncorrecto1Objects3 */
 /* Reuse gdjs.A1Code.GDIncorrecto2Objects3 */
 /* Reuse gdjs.A1Code.GDIncorrecto3Objects3 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A1\\Elefante.mp3", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A1\\Elefante2.mp3", false, 100, 1);
 }{for(var i = 0, len = gdjs.A1Code.GDCorrecto1Objects3.length ;i < len;++i) {
     gdjs.A1Code.GDCorrecto1Objects3[i].returnVariable(gdjs.A1Code.GDCorrecto1Objects3[i].getVariables().get("SonidoReproducido")).setBoolean(true);
 }

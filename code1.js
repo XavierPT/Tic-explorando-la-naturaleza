@@ -30,7 +30,7 @@ gdjs.IVideoCode.GDInstruccionObjects3= [];
 gdjs.IVideoCode.GDInstruccionObjects4= [];
 
 
-gdjs.IVideoCode.asyncCallback22757508 = function (runtimeScene, asyncObjectsList) {
+gdjs.IVideoCode.asyncCallback23003156 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.IVideoCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }gdjs.IVideoCode.localVariables.length = 0;
@@ -44,7 +44,7 @@ gdjs.IVideoCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.IVideoCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.IVideoCode.asyncCallback22757508(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.IVideoCode.asyncCallback23003156(runtimeScene, asyncObjectsList)));
 }
 }
 

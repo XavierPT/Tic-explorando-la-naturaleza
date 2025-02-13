@@ -34,7 +34,7 @@ gdjs.SVideoCode.GDTitulo_9595del_9595juegoObjects3= [];
 gdjs.SVideoCode.GDTitulo_9595del_9595juegoObjects4= [];
 
 
-gdjs.SVideoCode.asyncCallback15268804 = function (runtimeScene, asyncObjectsList) {
+gdjs.SVideoCode.asyncCallback24575172 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SVideoCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "S1", false);
 }gdjs.SVideoCode.localVariables.length = 0;
@@ -48,7 +48,7 @@ gdjs.SVideoCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SVideoCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.SVideoCode.asyncCallback15268804(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.SVideoCode.asyncCallback24575172(runtimeScene, asyncObjectsList)));
 }
 }
 

@@ -95,7 +95,7 @@ gdjs.P1Code.GDIncorrecto4Objects4= [];
 
 
 gdjs.P1Code.mapOfGDgdjs_9546P1Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.P1Code.GDIncorrecto3Objects1});
-gdjs.P1Code.asyncCallback23499972 = function (runtimeScene, asyncObjectsList) {
+gdjs.P1Code.asyncCallback23781644 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.P1Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaP", false);
 }gdjs.P1Code.localVariables.length = 0;
@@ -109,7 +109,7 @@ gdjs.P1Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.P1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P1Code.asyncCallback23499972(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.P1Code.asyncCallback23781644(runtimeScene, asyncObjectsList)));
 }
 }
 

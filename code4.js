@@ -84,7 +84,7 @@ gdjs.A2Code.mapOfGDgdjs_9546A2Code_9546GDIncorrecto3Objects1Objects = Hashtable.
 gdjs.A2Code.mapOfGDgdjs_9546A2Code_9546GDIncorrecto1Objects1Objects = Hashtable.newFrom({"Incorrecto1": gdjs.A2Code.GDIncorrecto1Objects1});
 gdjs.A2Code.mapOfGDgdjs_9546A2Code_9546GDIncorrecto2Objects1Objects = Hashtable.newFrom({"Incorrecto2": gdjs.A2Code.GDIncorrecto2Objects1});
 gdjs.A2Code.mapOfGDgdjs_9546A2Code_9546GDIncorrecto3Objects1Objects = Hashtable.newFrom({"Incorrecto3": gdjs.A2Code.GDIncorrecto3Objects1});
-gdjs.A2Code.asyncCallback22975340 = function (runtimeScene, asyncObjectsList) {
+gdjs.A2Code.asyncCallback23235956 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.A2Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "FinaA", false);
 }gdjs.A2Code.localVariables.length = 0;
@@ -98,7 +98,7 @@ gdjs.A2Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.A2Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A2Code.asyncCallback22975340(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.A2Code.asyncCallback23235956(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1144,7 +1144,7 @@ gdjs.A2Code.GDTitulo_9595del_9595juegoObjects2.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.A2Code.GDInstruccionObjects2 */
 /* Reuse gdjs.A2Code.GDTitulo_9595del_9595juegoObjects2 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A2\\Instruccion3.mp3", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Accesibility-audio\\A2\\Instruccion2.mp3", false, 100, 1);
 }{for(var i = 0, len = gdjs.A2Code.GDInstruccionObjects2.length ;i < len;++i) {
     gdjs.A2Code.GDInstruccionObjects2[i].returnVariable(gdjs.A2Code.GDInstruccionObjects2[i].getVariables().get("SonidoReproducido")).setBoolean(true);
 }
